@@ -4,6 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wash Care Services</title>
     <style>
+        @media (max-width: 768px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* spacing between boxes */
+  }
+
+  .service-box {
+    width: 90%;
+  }
+}
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -130,22 +142,20 @@
             <img src="images\aks.jpg" alt="Service 3">
         </div>
     </div>
-    <div class="container">
-        <h2>Quick, Reliable & Affordable Repairs. Book a technician now!</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Quick Response</h3>
-                <p>Technician at your doorstep within 60 minutes.</p>
-            </div>
-            <div class="feature">
-                <h3>Expert Technicians</h3>
-                <p>Trained and background-verified staff.</p>
-            </div>
-            <div class="feature">
-                <h3>Affordable Pricing</h3>
-                <p>Transparent pricing with no hidden charges.</p>
-            </div>
-        </div>
+    <div class="services-container">
+  <div class="service-box">
+    <h3>Quick Response</h3>
+    <p>Technician at your doorstep within 60 minutes.</p>
+  </div>
+  <div class="service-box">
+    <h3>Expert Technicians</h3>
+    <p>Trained and background-verified staff.</p>
+  </div>
+  <div class="service-box">
+    <h3>Affordable Pricing</h3>
+    <p>Transparent pricing with no hidden charges.</p>
+  </div>
+</div>
         <div class="booking-box">
     <h2>Book a Service</h2>
     <form action="https://yourdomain.infinityfreeapp.com/subfolder/submit.php
